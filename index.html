@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Saeed Rizwi
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          rizwisaeed680@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <!--<div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          
+
+        </div>
+    -->
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+            <a href="#skills" class="topmenu">Skills</a>
+            <a href="#projects" class="topmenu">Projects</a>
+            <a href="#recommendations" class="topmenu">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.pixabay.com/photo/2024/09/04/06/55/man-9020932_1280.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Saeed Rizwi! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer who is just starting up on my journey.
+            I have worked on applications and microservices deployed on IBM Cloud. 
+            I am Responsible, Goal-Oriented, Open-Minded and always Willing to learn.
+            
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>4 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+          <div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h6>Java</h6>
+          <p>4 years experience</p>
+        </div>  
+        <div class="skill">
+            <img src="html_finalprojimages/react.png" alt="">
+            <h6>react</h6>
+            <p>4 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="html_finalprojimages/node.png" alt="">
+            <h6>Node.js</h6>
+            <p>4 Years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/>
+          <h6>CSS</h6>
+          <p>4 years experience</p>
+        </div>
+
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>FitQuest-Gamified Fitness App</h3>
+            <ul>
+              <li>Developed a Flutter Application for Fitness enthusiasts with Google ML kit for Pose detection, Rep counting and various features.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Unit Conversion</h3>
+            <ul>
+              <li>Developed a website for Unit conversions like celius to fahrenheit, kilometers to miles and kilograms to pounds. </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Simple interest Calculator</h3>
+            <ul>
+              <li>Developed a website for Simple Interest calculations with given inputs of Principal Amount, Rate of Interest and Number of Years.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+         Saeed is a quick learner with a curious mind, strong initiative, great attitude, and excellent teamwork skills, showing clear potential to lead in the future.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+         Saeed consistently demonstrates a strong grasp of web technologies and a proactive attitude toward problem-solving. His
+          collaborative nature and clear communication make him an asset to any team. He’s reliable, skilled, and future-ready.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+         Saeed’s curiosity and drive set him apart. He doesn’t settle for surface-level understanding—he digs deep, asks insightful questions, and
+          always seeks better ways to build and improve systems. A true team player with leadership potential.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here-->
+        Thanks for leaving a recommendation!
+      </h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
