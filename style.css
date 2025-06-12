@@ -91,6 +91,35 @@ h2 {
 }
 
 /* About Me */
+@media (max-width: 768px) {
+.about-me {
+  display: flex;
+  align-items: center;
+}
+
+#about-me h1 {
+  font-size: 52px;
+  margin-top: 60px;
+  color: #7600bc;
+}
+
+#about-me p {
+  font-size: 22px;
+  color: rgb(128, 128, 128);
+  margin-top: -1cm;
+}
+
+.profile_image {
+  width: 30% ;
+  max-width: 300px;
+  height: auto;
+  
+
+  margin-right: 20px;
+  
+  
+}
+}
 
 .about-me {
   display: flex;
@@ -98,8 +127,8 @@ h2 {
 }
 
 #about-me h1 {
-  font-size: 65px;
-  margin-top: 90px;
+  font-size: 70px;
+  margin-top: 60px;
   color: #7600bc;
 }
 
@@ -110,12 +139,15 @@ h2 {
 }
 
 .profile_image {
-  width: 400px;
-  height: fit-content;
-  vertical-align: middle;
-  margin: 5px;
-  padding: 10px;
-  margin-left:10px;
+  width: 25% ;
+  max-width: 280px;
+  min-width: 180px;
+  height: auto;
+  
+
+  margin-right: 20px;
+  
+  
 }
 
 /* Skills */
